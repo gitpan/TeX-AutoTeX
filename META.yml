@@ -1,0 +1,70 @@
+---
+abstract: 'The automated TeX processing module developed and used at arXiv.org'
+author:
+  - 'Thorsten Schwander <Thorsten.Schwander@gmail.com>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: TeX-AutoTeX
+provides:
+  TeX::AutoTeX:
+    file: lib/TeX/AutoTeX.pm
+    version: 0.9
+  TeX::AutoTeX::ConcatPDF:
+    file: lib/TeX/AutoTeX/ConcatPDF.pm
+    version: v0.9.0
+  TeX::AutoTeX::Config:
+    file: lib/TeX/AutoTeX/Config.pm
+    version: v1.7.2.7
+  TeX::AutoTeX::Exception:
+    file: lib/TeX/AutoTeX/Exception.pm
+    version: v1.7.2.5
+  TeX::AutoTeX::FatalException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::File:
+    file: lib/TeX/AutoTeX/File.pm
+    version: v1.36.2.5
+  TeX::AutoTeX::Fileset:
+    file: lib/TeX/AutoTeX/Fileset.pm
+    version: v1.8.2.4
+  TeX::AutoTeX::FormatException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::HyperTeX:
+    file: lib/TeX/AutoTeX/HyperTeX.pm
+    version: v1.10.2.6
+  TeX::AutoTeX::InvNameException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::Log:
+    file: lib/TeX/AutoTeX/Log.pm
+    version: v1.10.2.4
+  TeX::AutoTeX::Mail:
+    file: lib/TeX/AutoTeX/Mail.pm
+    version: v1.5.2.3
+  TeX::AutoTeX::MissfontException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::PostScript:
+    file: lib/TeX/AutoTeX/PostScript.pm
+    version: v1.11.2.4
+  TeX::AutoTeX::Process:
+    file: lib/TeX/AutoTeX/Process.pm
+    version: v1.14.2.5
+  TeX::AutoTeX::StampPDF:
+    file: lib/TeX/AutoTeX/StampPDF.pm
+    version: v1.9.2.5
+  TeX::AutoTeX::TexChrException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::TexMFCnfException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::TypeException:
+    file: lib/TeX/AutoTeX/Exception.pm
+  TeX::AutoTeX::WorkdirException:
+    file: lib/TeX/AutoTeX/Exception.pm
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.9
