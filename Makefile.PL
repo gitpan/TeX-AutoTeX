@@ -9,7 +9,8 @@ WriteMakefile
                    'Class::Accessor::Fast' => '0.34',
                    'Error' => '0.17',
                    'Test::More' => 0,
-                   'arXiv::FileGuess' => 0
+                   'arXiv::FileGuess' => 0,
+                   'parent' => '0.224'
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

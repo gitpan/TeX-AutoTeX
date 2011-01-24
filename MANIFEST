@@ -1,5 +1,6 @@
 Build.PL
 Changes
+ignore.txt
 lib/TeX/AutoTeX.pm
 lib/TeX/AutoTeX/ConcatPDF.pm
 lib/TeX/AutoTeX/Config.pm

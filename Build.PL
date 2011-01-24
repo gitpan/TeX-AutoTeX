@@ -3,6 +3,7 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
+    sign                => 1,
     module_name         => 'TeX::AutoTeX',
     license             => 'perl',
     dist_author         => q{Thorsten Schwander <Thorsten.Schwander@gmail.com>},
@@ -14,6 +15,7 @@ my $builder = Module::Build->new(
 		       'Error' => 0.17,
 		       'CAM::PDF' => 1.52,
 		       'Class::Accessor::Fast' => 0.34,
+		       'parent' => 0.224,
 		      },
     add_to_cleanup      => [ 'TeX-AutoTeX-*' ],
     create_makefile_pl => 'traditional',
