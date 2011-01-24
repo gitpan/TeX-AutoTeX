@@ -5,7 +5,11 @@ WriteMakefile
   'NAME' => 'TeX::AutoTeX',
   'VERSION_FROM' => 'lib/TeX/AutoTeX.pm',
   'PREREQ_PM' => {
-                   'Test::More' => 0
+                   'CAM::PDF' => '1.52',
+                   'Class::Accessor::Fast' => '0.34',
+                   'Error' => '0.17',
+                   'Test::More' => 0,
+                   'arXiv::FileGuess' => 0
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

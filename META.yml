@@ -3,7 +3,11 @@ abstract: 'The automated TeX processing module developed and used at arXiv.org'
 author:
   - 'Thorsten Schwander <Thorsten.Schwander@gmail.com>'
 build_requires:
+  CAM::PDF: 1.52
+  Class::Accessor::Fast: 0.34
+  Error: 0.17
   Test::More: 0
+  arXiv::FileGuess: 0
 configure_requires:
   Module::Build: 0.36
 generated_by: 'Module::Build version 0.3607'
@@ -15,7 +19,7 @@ name: TeX-AutoTeX
 provides:
   TeX::AutoTeX:
     file: lib/TeX/AutoTeX.pm
-    version: 0.9
+    version: 0.901
   TeX::AutoTeX::ConcatPDF:
     file: lib/TeX/AutoTeX/ConcatPDF.pm
     version: v0.9.0
@@ -67,4 +71,4 @@ provides:
     file: lib/TeX/AutoTeX/Exception.pm
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.9
+version: 0.901
