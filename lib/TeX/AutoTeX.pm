@@ -1,11 +1,11 @@
 package TeX::AutoTeX;
 
 #
-# $Id: AutoTeX.pm,v 1.20.2.4 2011/01/22 04:50:56 thorstens Exp $
-# $Revision: 1.20.2.4 $
+# $Id: AutoTeX.pm,v 1.20.2.5 2011/01/24 21:44:05 thorstens Exp $
+# $Revision: 1.20.2.5 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX.pm,v $
 #
-# $Date: 2011/01/22 04:50:56 $
+# $Date: 2011/01/24 21:44:05 $
 # $Author: thorstens $
 #
 
@@ -13,8 +13,8 @@ use strict;
 ### use warnings;
 use Carp;
 
-# our ($VERSION) = '$Revision: 1.20.2.4 $' =~ m{ \$Revision: \s+ (\S+) }x;
-our $VERSION = '0.902';
+# our ($VERSION) = '$Revision: 1.20.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our $VERSION = '0.903';
 
 use TeX::AutoTeX::Config qw(
 			     $AUTOTEX_ENV_PATH
@@ -198,7 +198,7 @@ logfile pre- hashref workdir chroot tex texmf texmf.cnf stampref fontmap config.
 
 TeX::AutoTeX - automated processing of (La-)TeX sources
 
-head1 WARNING
+=head1 WARNING
 
 TeX::AutoTeX::process will modify, overwrite, and delete files in the
 specified directory. It is assumed that directory is a temporary working

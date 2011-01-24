@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Config;
 
 #
-# $Id: Config.pm,v 1.7.2.7 2011/01/22 04:54:15 thorstens Exp $
-# $Revision: 1.7.2.7 $
+# $Id: Config.pm,v 1.7.2.8 2011/01/24 21:44:05 thorstens Exp $
+# $Revision: 1.7.2.8 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Config.pm,v $
 #
-# $Date: 2011/01/22 04:54:15 $
+# $Date: 2011/01/24 21:44:05 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.7.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.7.2.8 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Exporter);
 our @EXPORT_OK;
@@ -60,6 +60,7 @@ $SENDMAIL = q{/usr/sbin/sendmail -t};
 #$CRYPT    = $arXiv::Config::Site::AutoTeX::CRYPT;
 $CRYPT = q{};
 
+# set the default resolution/mode for dvips using bitmap fonts
 #$DEFAULTPSRESOLUTION = defined $arXiv::Config::Site::AutoTeX::DEFAULTPSRESOLUTION ?
 #  $arXiv::Config::Site::AutoTeX::DEFAULTPSRESOLUTION :
 #  600;
@@ -122,14 +123,16 @@ TeX::AutoTeX::Config
 
 =head1 DESCRIPTION
 
-Centralization of configuration parameters for TeX::AutoTeX so that
-TeX::AutoTeX can be used separately from other arXiv software.
+This is the main configuration file for TeX::AutoTeX. It contains all
+configuration parameters for TeX::AutoTeX and allows TeX::AutoTeX to be used
+separately from other arXiv software.
 
-The settings in this file must be customized to reflect paths and executable
-names of the local TeX installation, maintainer email addresses, etc..
+The settings in this file must be customized to reflect PATH settings and
+executable names of the local TeX installation, maintainer email addresses,
+etc.. The comments for each setting should be used as guidance.
 
-In the sample configuration presented in this file as distributed variables
-which are not identical across all arXiv sites are imported from the
+In the sample configuration presented in this file those variables, which are
+not identical across all arXiv sites, are imported from the
 C<arXiv::Config::Site> namespace. These settings vary depending on the
 capabilities of each mirror and their individual setup.
 

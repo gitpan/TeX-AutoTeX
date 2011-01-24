@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Exception;
 
 #
-# $Id: Exception.pm,v 1.7.2.5 2011/01/22 04:52:14 thorstens Exp $
-# $Revision: 1.7.2.5 $
+# $Id: Exception.pm,v 1.7.2.6 2011/01/24 21:44:05 thorstens Exp $
+# $Revision: 1.7.2.6 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Exception.pm,v $
 #
-# $Date: 2011/01/22 04:52:14 $
+# $Date: 2011/01/24 21:44:05 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.7.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.7.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Error);
 use overload (q{""} => 'stringify');
@@ -71,7 +71,8 @@ easily added if necessary.
 
 =head2 new
 
-instantiate an Exception object with some customization of
+Instantiate an Exception object with customization of the textual
+representation of the error message.
 
 =head1 BUGS AND LIMITATIONS
 
