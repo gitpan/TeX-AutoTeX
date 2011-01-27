@@ -1,11 +1,11 @@
 package TeX::AutoTeX::Log;
 
 #
-# $Id: Log.pm,v 1.10.2.4 2011/01/03 04:06:00 thorstens Exp $
-# $Revision: 1.10.2.4 $
+# $Id: Log.pm,v 1.10.2.5 2011/01/27 18:42:28 thorstens Exp $
+# $Revision: 1.10.2.5 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Log.pm,v $
 #
-# $Date: 2011/01/03 04:06:00 $
+# $Date: 2011/01/27 18:42:28 $
 # $Author: thorstens $
 #
 
@@ -14,7 +14,7 @@ use strict;
 use Carp;
 use TeX::AutoTeX::Exception;
 
-our ($VERSION) = '$Revision: 1.10.2.4 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.10.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use IO::Handle; #for autoflush
 
@@ -105,7 +105,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::Log
+TeX::AutoTeX::Log - log handling for TeX::AutoTeX
 
 =head1 DESCRIPTION
 

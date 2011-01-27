@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Mail;
 
 #
-# $Id: Mail.pm,v 1.5.2.3 2011/01/03 04:06:00 thorstens Exp $
-# $Revision: 1.5.2.3 $
+# $Id: Mail.pm,v 1.5.2.4 2011/01/27 18:42:28 thorstens Exp $
+# $Revision: 1.5.2.4 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Mail.pm,v $
 #
-# $Date: 2011/01/03 04:06:00 $
+# $Date: 2011/01/27 18:42:28 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.5.2.3 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.5.2.4 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use TeX::AutoTeX::Config qw($TEX_ADMIN_ADDRESS $MAIL_FAILURES_ADDRESS $SENDMAIL);
 
@@ -74,7 +74,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::Mail
+TeX::AutoTeX::Mail - email handling for TeX::AutoTeX process messages
 
 =head1 DESCRIPTION
 

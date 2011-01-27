@@ -1,11 +1,11 @@
 package TeX::AutoTeX;
 
 #
-# $Id: AutoTeX.pm,v 1.20.2.5 2011/01/24 21:44:05 thorstens Exp $
-# $Revision: 1.20.2.5 $
+# $Id: AutoTeX.pm,v 1.20.2.7 2011/01/27 18:56:29 thorstens Exp $
+# $Revision: 1.20.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX.pm,v $
 #
-# $Date: 2011/01/24 21:44:05 $
+# $Date: 2011/01/27 18:56:29 $
 # $Author: thorstens $
 #
 
@@ -13,8 +13,8 @@ use strict;
 ### use warnings;
 use Carp;
 
-# our ($VERSION) = '$Revision: 1.20.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
-our $VERSION = '0.903';
+# our ($VERSION) = '$Revision: 1.20.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our $VERSION = 'v0.904.0';
 
 use TeX::AutoTeX::Config qw(
 			     $AUTOTEX_ENV_PATH
@@ -246,6 +246,11 @@ for many years. The resulting file(s) remain in the same directory. It is up
 to the calling process to pre- or post-process the directory contents as
 required.
 
+No particular naming conventions or other requirements are imposed on the
+source material, and sub-directories are permitted. The module attempts to
+determine processing order and input format based on file characteristics and
+heuristics and generally does not require any user input.
+
 Note that arXiv does not allow execution of external programs from C<TeX> or
 C<dvips> (paranoid setting in texmf.cnf), and that neither C<makeindex> or
 C<bibtex> or similar intermediate programs are run. These are deliberate
@@ -253,8 +258,9 @@ choices. Consequently this module doesn't provide that functionality either.
 
 =head1 METHODS
 
-The main purpose of C<TeX::AutoTeX> is to instantiate an object, set
-attributes relevant for processing and then call C<process> to do the work.
+The main purpose of C<TeX::AutoTeX> is to create an instance for a given
+source directory, set attributes relevant for processing and then call
+C<process> to do the work.
 
 =head2 new
 

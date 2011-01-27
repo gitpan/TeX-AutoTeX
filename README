@@ -14,10 +14,10 @@ employed at arXiv for many years. The resulting file(s) remain in the same
 directory. It is up to the calling process to pre- or post-process the
 directory contents as required.
 
-For example the directory contents could come from a storage module or
-repository system and was unpacked to flat files before invoking TeX::AutoTeX,
-and the generated PostScript or PDF is assumed to be used in a document
-delivery system.
+For example the directory contents could originate from a storage module or
+repository system and is unpacked to flat files in a temporary directory
+before TeX::AutoTeX is being invoked on that directory. The generated
+PostScript or PDF is assumed to then be used in a document delivery system.
 
 No particular naming conventions or other requirements are imposed on the
 source material, and sub-directories are permitted. The module attempts to

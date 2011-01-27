@@ -1,16 +1,16 @@
 package TeX::AutoTeX::ConcatPDF;
 #
-# $Id: ConcatPDF.pm,v 1.2.2.5 2011/01/22 04:52:14 thorstens Exp $
-# $Revision: 1.2.2.5 $
+# $Id: ConcatPDF.pm,v 1.2.2.7 2011/01/27 18:56:29 thorstens Exp $
+# $Revision: 1.2.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/ConcatPDF.pm,v $
 #
-# $Date: 2011/01/22 04:52:14 $
+# $Date: 2011/01/27 18:56:29 $
 # $Author: thorstens $
 #
 use strict;
 ### use warnings;
 
-use version; our $VERSION = qv('0.9');
+use version; our $VERSION = qv('0.94');
 use parent qw(Exporter);
 our @EXPORT_OK = qw(concatenate_pdf);
 
@@ -37,7 +37,6 @@ sub concatenate_pdf {
   return;
 }
 
-
 1;
 
 __END__
@@ -46,7 +45,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::ConcatPDF - concatenate a list of PDF file
+TeX::AutoTeX::ConcatPDF - concatenate a list of PDF files
 
 =head1 VERSION
 

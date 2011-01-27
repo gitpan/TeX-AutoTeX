@@ -1,18 +1,18 @@
 package TeX::AutoTeX::HyperTeX;
 
 #
-# $Id: HyperTeX.pm,v 1.10.2.6 2011/01/20 18:56:27 thorstens Exp $
-# $Revision: 1.10.2.6 $
+# $Id: HyperTeX.pm,v 1.10.2.7 2011/01/27 18:42:28 thorstens Exp $
+# $Revision: 1.10.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/HyperTeX.pm,v $
 #
-# $Date: 2011/01/20 18:56:27 $
+# $Date: 2011/01/27 18:42:28 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.10.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.10.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 sub copy_source_from_hyper {
   my ($this_type, $file, $dir, $log, $local_hyper_transform) = @_;
@@ -218,7 +218,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::HyperTeX
+TeX::AutoTeX::HyperTeX - filter for augmenting TeX source with hypertex facilities
 
 =head1 DESCRIPTION
 

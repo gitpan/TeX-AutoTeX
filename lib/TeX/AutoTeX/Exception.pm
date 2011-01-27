@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Exception;
 
 #
-# $Id: Exception.pm,v 1.7.2.6 2011/01/24 21:44:05 thorstens Exp $
-# $Revision: 1.7.2.6 $
+# $Id: Exception.pm,v 1.7.2.7 2011/01/27 18:42:27 thorstens Exp $
+# $Revision: 1.7.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Exception.pm,v $
 #
-# $Date: 2011/01/24 21:44:05 $
+# $Date: 2011/01/27 18:42:27 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.7.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.7.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Error);
 use overload (q{""} => 'stringify');
@@ -58,7 +58,7 @@ use parent qw(TeX::AutoTeX::Exception);
 
 =head1 NAME
 
-TeX::AutoTeX::Exception
+TeX::AutoTeX::Exception - framework for exception handling in TeX::AutoTeX
 
 =head1 DESCRIPTION
 
@@ -75,6 +75,9 @@ Instantiate an Exception object with customization of the textual
 representation of the error message.
 
 =head1 BUGS AND LIMITATIONS
+
+Using the C<Error> module is no longer recommended. Exception handling should be
+migrated to something like C<Try::Tiny> or C<Error::TryCatch>.
 
 Please report bugs to L<www-admin|http://arxiv.org/help/contact>
 

@@ -1,18 +1,18 @@
 package TeX::AutoTeX::PostScript;
 
 #
-# $Id: PostScript.pm,v 1.11.2.4 2011/01/03 04:06:00 thorstens Exp $
-# $Revision: 1.11.2.4 $
+# $Id: PostScript.pm,v 1.11.2.5 2011/01/27 18:42:28 thorstens Exp $
+# $Revision: 1.11.2.5 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/PostScript.pm,v $
 #
-# $Date: 2011/01/03 04:06:00 $
+# $Date: 2011/01/27 18:42:28 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.11.2.4 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.11.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 sub fix_ps_title {
   my ($sfile, $dir, $title, $log) = @_;
@@ -154,7 +154,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::PostScript
+TeX::AutoTeX::PostScript - watermark PostScript files and related manipulations
 
 =head1 DESCRIPTION
 

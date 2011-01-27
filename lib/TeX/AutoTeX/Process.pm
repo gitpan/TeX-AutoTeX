@@ -1,11 +1,11 @@
 package TeX::AutoTeX::Process;
 
 #
-# $Id: Process.pm,v 1.14.2.5 2011/01/22 04:52:14 thorstens Exp $
-# $Revision: 1.14.2.5 $
+# $Id: Process.pm,v 1.14.2.6 2011/01/27 18:42:28 thorstens Exp $
+# $Revision: 1.14.2.6 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Process.pm,v $
 #
-# $Date: 2011/01/22 04:52:14 $
+# $Date: 2011/01/27 18:42:28 $
 # $Author: thorstens $
 #
 
@@ -13,7 +13,7 @@ use strict;
 ### use warnings;
 use Carp;
 
-our ($VERSION) = '$Revision: 1.14.2.5 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.14.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use TeX::AutoTeX::Config qw($AUTOTEX_TIMEOUT $DIRECTIVE_FILE);
 use TeX::AutoTeX::Fileset;
@@ -369,7 +369,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::Process
+TeX::AutoTeX::Process - orchestrate the system calls for tex, dvips, etc.
 
 =head1 DESCRIPTION
 

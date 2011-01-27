@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Config;
 
 #
-# $Id: Config.pm,v 1.7.2.8 2011/01/24 21:44:05 thorstens Exp $
-# $Revision: 1.7.2.8 $
+# $Id: Config.pm,v 1.7.2.9 2011/01/27 18:42:27 thorstens Exp $
+# $Revision: 1.7.2.9 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Config.pm,v $
 #
-# $Date: 2011/01/24 21:44:05 $
+# $Date: 2011/01/27 18:42:27 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.7.2.8 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.7.2.9 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Exporter);
 our @EXPORT_OK;
@@ -119,7 +119,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::Config
+TeX::AutoTeX::Config - central configuration file for TeX::AutoTeX
 
 =head1 DESCRIPTION
 

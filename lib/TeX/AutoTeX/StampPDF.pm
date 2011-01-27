@@ -1,11 +1,11 @@
 package TeX::AutoTeX::StampPDF;
 
 #
-# $Id: StampPDF.pm,v 1.9.2.6 2011/01/24 21:44:05 thorstens Exp $
-# $Revision: 1.9.2.6 $
+# $Id: StampPDF.pm,v 1.9.2.7 2011/01/27 18:42:29 thorstens Exp $
+# $Revision: 1.9.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/StampPDF.pm,v $
 #
-# $Date: 2011/01/24 21:44:05 $
+# $Date: 2011/01/27 18:42:29 $
 # $Author: thorstens $
 #
 
@@ -13,7 +13,7 @@ use strict;
 ### use warnings;
 use Carp qw(cluck carp);
 
-our ($VERSION) = '$Revision: 1.9.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.9.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Exporter);
 our @EXPORT_OK = qw(stamp_pdf);
@@ -75,7 +75,7 @@ __END__
 
 =head1 NAME
 
-TeX::AutoTeX::StampPDF - printing the provided string on the left edge of the 1st page of a PDF
+TeX::AutoTeX::StampPDF - watermark PDF files
 
 =head1 VERSION
 
@@ -89,9 +89,12 @@ stamp_pdf($pdffile, $array_ref);
 
 =head1 DESCRIPTION
 
-This module modifies a given PDF file. It prints an arbitrary text string (within certain length limits) onto the left edge of the 1st page of any well formed PDF file.
+This module modifies a given PDF file. It prints an arbitrary text string
+(within certain length limits) onto the left edge of the 1st page of a well
+formed PDF file.
 
-This is intended to be used to put the arXiv stamp onto PDF-only and pdflatex submissions, but any type of "watermark" text string is possible.
+This is intended to be used to put the arXiv stamp onto PDF-only and pdflatex
+submissions, but any type of "watermark" text string is possible.
 
 Non adjustable settings are:
 
