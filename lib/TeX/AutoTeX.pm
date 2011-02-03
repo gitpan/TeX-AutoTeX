@@ -14,7 +14,7 @@ use strict;
 use Carp;
 
 # our ($VERSION) = '$Revision: 1.20.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
-our $VERSION = 'v0.904.0';
+our $VERSION = 'v0.905.0';
 
 use TeX::AutoTeX::Config qw(
 			     $AUTOTEX_ENV_PATH

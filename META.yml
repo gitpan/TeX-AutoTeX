@@ -11,7 +11,7 @@ build_requires:
   parent: 0.224
 configure_requires:
   Module::Build: 0.36
-generated_by: 'Module::Build version 0.3622'
+generated_by: 'Module::Build version 0.3624'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,13 +20,13 @@ name: TeX-AutoTeX
 provides:
   TeX::AutoTeX:
     file: lib/TeX/AutoTeX.pm
-    version: v0.904.0
+    version: v0.905.0
   TeX::AutoTeX::ConcatPDF:
     file: lib/TeX/AutoTeX/ConcatPDF.pm
     version: v0.94.0
   TeX::AutoTeX::Config:
     file: lib/TeX/AutoTeX/Config.pm
-    version: v1.7.2.9
+    version: v1.7.2.10
   TeX::AutoTeX::Exception:
     file: lib/TeX/AutoTeX/Exception.pm
     version: v1.7.2.7
@@ -58,7 +58,7 @@ provides:
     version: v1.11.2.5
   TeX::AutoTeX::Process:
     file: lib/TeX/AutoTeX/Process.pm
-    version: v1.14.2.6
+    version: v1.14.2.7
   TeX::AutoTeX::StampPDF:
     file: lib/TeX/AutoTeX/StampPDF.pm
     version: v1.9.2.7
@@ -72,4 +72,4 @@ provides:
     file: lib/TeX/AutoTeX/Exception.pm
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.904.0
+version: v0.905.0

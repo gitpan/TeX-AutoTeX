@@ -1,18 +1,18 @@
 package TeX::AutoTeX::Config;
 
 #
-# $Id: Config.pm,v 1.7.2.9 2011/01/27 18:42:27 thorstens Exp $
-# $Revision: 1.7.2.9 $
+# $Id: Config.pm,v 1.7.2.10 2011/02/02 06:26:25 thorstens Exp $
+# $Revision: 1.7.2.10 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Config.pm,v $
 #
-# $Date: 2011/01/27 18:42:27 $
+# $Date: 2011/02/02 06:26:25 $
 # $Author: thorstens $
 #
 
 use strict;
 ### use warnings;
 
-our ($VERSION) = '$Revision: 1.7.2.9 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.7.2.10 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use parent qw(Exporter);
 our @EXPORT_OK;
@@ -30,8 +30,6 @@ BEGIN {
                   $TEX_ADMIN_ADDRESS
                   $MAIL_FAILURES_ADDRESS
                   $SENDMAIL
-                  $PS_CACHE
-                  $PS_GEN_TMP
 		  $DEFAULTPSRESOLUTION
                   $DIRECTIVE_FILE
                   $THIS_SITE

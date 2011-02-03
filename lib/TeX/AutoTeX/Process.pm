@@ -1,11 +1,11 @@
 package TeX::AutoTeX::Process;
 
 #
-# $Id: Process.pm,v 1.14.2.6 2011/01/27 18:42:28 thorstens Exp $
-# $Revision: 1.14.2.6 $
+# $Id: Process.pm,v 1.14.2.7 2011/02/03 03:57:38 thorstens Exp $
+# $Revision: 1.14.2.7 $
 # $Source: /cvsroot/arxivlib/arXivLib/lib/TeX/AutoTeX/Process.pm,v $
 #
-# $Date: 2011/01/27 18:42:28 $
+# $Date: 2011/02/03 03:57:38 $
 # $Author: thorstens $
 #
 
@@ -13,7 +13,7 @@ use strict;
 ### use warnings;
 use Carp;
 
-our ($VERSION) = '$Revision: 1.14.2.6 $' =~ m{ \$Revision: \s+ (\S+) }x;
+our ($VERSION) = '$Revision: 1.14.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
 
 use TeX::AutoTeX::Config qw($AUTOTEX_TIMEOUT $DIRECTIVE_FILE);
 use TeX::AutoTeX::Fileset;
@@ -90,7 +90,7 @@ sub process_files {
   my @unknowns = ();   # names of files with unknown types
   foreach my $fileobj ($self->file_list()) {
     my $filename = $fileobj->{filename};
-    my $filetype = $fileobj->type_name();
+    my $filetype = $fileobj->filetype_name();
     if ( $filetype =~ /(compressed|TAR\sarchive|MULTI_PART_MIME|UUencoded)/i ) {
       $log->error("Package contains '$filename' which is of type '$filetype'. This file should be removed or marked ignore.");
       exit 121;
