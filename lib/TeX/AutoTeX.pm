@@ -14,7 +14,7 @@ use strict;
 use Carp;
 
 # our ($VERSION) = '$Revision: 1.20.2.7 $' =~ m{ \$Revision: \s+ (\S+) }x;
-our $VERSION = 'v0.905.0';
+our $VERSION = 'v0.906.0';
 
 use TeX::AutoTeX::Config qw(
 			     $AUTOTEX_ENV_PATH
@@ -450,7 +450,7 @@ Let us know L<http://arxiv.org/help/contact>
  and that the input of others will benefit arXiv.org.
 
  Code developed and contributed to by Tanmoy Bhattacharya, Rob
- Harthill, Mark Doyle, Thorsten Schwander, and Simeon Warner.
+ Hartill, Mark Doyle, Thorsten Schwander, and Simeon Warner.
  Refactored to separate generic code from arXiv.org specific code
  by Stephen Marsh, Michael Fromerth, and Simeon Warner 2005/2006.
 

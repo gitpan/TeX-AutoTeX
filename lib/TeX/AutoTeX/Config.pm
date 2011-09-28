@@ -150,7 +150,7 @@ capabilities of each mirror and their individual setup.
  and that the input of others will benefit arXiv.org.
 
  Code developed and contributed to by Tanmoy Bhattacharya, Rob
- Harthill, Mark Doyle, Thorsten Schwander, and Simeon Warner.
+ Hartill, Mark Doyle, Thorsten Schwander, and Simeon Warner.
  Refactored to separate generic code from arXiv.org specific code
  by Stephen Marsh, Michael Fromerth, and Simeon Warner 2005/2006.
 
